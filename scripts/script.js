@@ -19,17 +19,23 @@ let swiper = new Swiper('.brandSwiper', {
         disableOnInteraction: false,
     },
     breakpoints: {
-        320: {
-            slidesPerView: 2,
-        },
-        480: {
-            slidesPerView: 3,
-        },
-        768: {
+        1200: {
             slidesPerView: 4,
         },
-        1024: {
-            slidesPerView: 5,
+        900: {
+            slidesPerView: 4,
+        },
+        500: {
+            slidesPerView: 3,
         },
     }
+});
+
+// SHOW MENU JS
+
+const bars = document.querySelector('.bars');
+const navMenu = document.querySelector('.menu');
+
+bars.addEventListener('click', () => {
+    navMenu.classList.toggle('show-menu');
 });
