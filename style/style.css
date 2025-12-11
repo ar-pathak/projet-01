@@ -203,6 +203,28 @@ header {
     width: 250px;
 }
 
+.brandSwiper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    width: auto !important;
+}
+
+.brandSwiper .swiper-slide img {
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(40%);
+}
+
+.brandSwiper .swiper-slide:hover img {
+    filter: brightness(100%);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
 .hero_img {
     width: 40%;
     position: relative;
