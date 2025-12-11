@@ -248,6 +248,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    animation: Anim_LR 5s infinite linear;
 }
 
 .img_box img {
@@ -275,6 +276,39 @@ header {
 
 .img_box2 {
     width: 300px;
-    top: 70%;
+    top: 80%;
     left: -20%;
+    animation: Anim_TB 5s infinite linear;
+}
+
+/* ANIMATION */
+
+@keyframes Anim_LR {
+    0% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+
+}
+
+@keyframes Anim_TB {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+
 }
