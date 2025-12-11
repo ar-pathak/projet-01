@@ -18,6 +18,7 @@
     --black-color: #000;
     --prim-color: #5c27ff;
     --light-border: rgba(131, 131, 131, 0.2);
+    --light-text: #CDCED4;
 
     --kaushan-font: 'Kaushan Script', cursive;
 
@@ -155,6 +156,18 @@ header {
     align-items: center;
     gap: 50px;
     padding: 5% 12%;
+    position: relative;
+    z-index: 5;
+}
+
+.hero_shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 46%, rgba(92, 39, 255, 0.3) 100%);
+    z-index: -1;
 }
 
 .hero_content {
@@ -182,7 +195,7 @@ header {
 
 .hero_content p {
     font-size: 1.1rem;
-    color: var(--white-color);
+    color: var(--light-text);
     margin-bottom: 20px;
 }
 
@@ -191,5 +204,77 @@ header {
 }
 
 .hero_img {
-    width: 50%;
+    width: 40%;
+    position: relative;
+}
+
+.hero_img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.hero_img:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero_img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.img_box {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    padding: 20px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img_box img {
+    width: 60px;
+    height: 60px;
+}
+
+.box_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.box_info h2 {
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--kaushan-font);
+}
+
+.box_info h5 {
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.img_box2 {
+    width: 300px;
+    top: 70%;
+    left: -20%;
 }
