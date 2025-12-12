@@ -428,3 +428,34 @@ header {
         line-height: 3.5rem;
     }
 }
+
+@media (max-width:500px) {
+    .nav_btns {
+        display: none;
+
+    }
+
+    .hero_content p {
+        width: 100%;
+    }
+
+    .img_box {
+        left: 40%;
+        top: -5%;
+    }
+
+    .img_box2 {
+        top: 80%;
+        left: -7%;
+    }
+
+    .hero_img {
+        width: 100%;
+    }
+    .hero_img:after{
+        transform: translate(-50%, -50%) rotate(14deg);
+    }
+    .hero_img::before{
+        transform: translate(-50%, -50%) rotate(-14deg);
+    }
+}
