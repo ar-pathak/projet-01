@@ -426,6 +426,30 @@ header {
     margin-top: 20px;
 }
 
+/* OUR SPECIALTY */
+.specialty {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.specialty .headings {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headings p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    line-height: 1.8rem;
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
 /* ANIMATION */
 
 @keyframes Anim_LR {
