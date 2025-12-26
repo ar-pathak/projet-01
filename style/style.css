@@ -454,7 +454,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
     place-content: center;
     place-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .specialty_card {
@@ -463,7 +463,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     cursor: pointer;
     position: relative;
 }
@@ -475,7 +475,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0)50%, rgba(255, 255, 255, 0.1)100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0)40%, rgba(255, 255, 255, 0.1)100%);
     border-radius: 20px;
     z-index: -1;
 }
